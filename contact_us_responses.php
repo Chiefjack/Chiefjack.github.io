@@ -5,8 +5,6 @@
   $category = $_POST['category'];
   $message = $_POST['subject'];
 
-  $email_from = 'chiefjackgdbusiness@gmail.com';
-
   $email_subject = "[OFFICIAL] Creator School Contact Us Response";
 
   $email_body = "User's Name: $first_name\n".
@@ -17,7 +15,7 @@
 
   $to = "jackygems2003@gmail.com";
 
-  $headers = "From: $email_from \r\n";
+  $headers = "From: $email \r\n";
 
   $headers .= "Reply-To: $email \r\n";
 
