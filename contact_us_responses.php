@@ -19,7 +19,11 @@
 
   $headers = "From: $email_from \r\n";
 
-  $headers .= "Reply To: $email \r\n";
+  $headers .= "Reply-To: $email \r\n";
+
+  $headers .= MIME-Version: 1.0 \r\n";
+
+  $headers .= "Content-type: text/html; charset-utf-8";
 
   mail($to,$email_subject,$email_body,$headers);
 
