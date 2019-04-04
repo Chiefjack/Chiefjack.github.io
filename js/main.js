@@ -4,6 +4,11 @@ $('#features_id').on('click', function() {
   $('html, body').animate({scrollTop: images},900);
 });
 
+$('#staff_id').on('click', function() {
+  const images = $('#staff').position().top;
+  $('html, body').animate({scrollTop: images},900);
+});
+
 
 /*Scroll to top when arrow up clicked*/
 $(window).scroll(function() {
