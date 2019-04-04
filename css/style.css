@@ -129,7 +129,7 @@ main {
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 50vh;
-	flex: 0 1 60vw;
+	flex: 0 1 50vw;
 	margin: 0;
 }
 
@@ -195,14 +195,161 @@ main {
 	font-size: 1.25rem;
 }
 
+#break {
+	padding: 0.5rem;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+#break h2 {
+	display: inline-block;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 1.5rem;
+}
+
 #chiefjack_image {
 	background: url(../img/chiefjack.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 50vh;
-	flex: 0 1 60vw;
+	height: 100vh;
+	flex: 0 1 50vw;
 	margin: 0;
+}
+
+#strikeking22_image {
+	background: url(../img/strikeking22.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#satanicgd_image {
+	background: url(../img/satanicgd.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#cynik_image {
+	background: url(../img/cynik.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#ender_image {
+	background: url(../img/ender.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#v3ntique_image {
+	background: url(../img/v3ntique.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#aphorism_image {
+	background: url(../img/aphorism.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#chunks_image {
+	background: url(../img/chunks.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#gooseam_image {
+	background: url(../img/gooseam.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#sequex_image {
+	background: url(../img/sequex.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#v0ltgd_image {
+	background: url(../img/v0ltgd.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#ztratoz_image {
+	background: url(../img/ztratoz.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#tutors {
+	background: #fff;
+}
+
+#tutors_text {
+	display: flex;
+	flex: 0 1 40vw;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#tutors_text h2 {
+	font-size: 3rem;
+}
+
+#tutors_text p {
+	font-size: 1.25rem;
 }
 
 .links {
@@ -379,7 +526,12 @@ input[type=submit]:hover {
 		height: 100vh;
 	}
 
-	#chiefjack_image {
+	#tutors {
+		display: flex;
+		height: 100%;
+	}
+
+	#tutors_text {
 		height: 100vh;
 	}
 }

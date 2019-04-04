@@ -4,8 +4,8 @@ $('#features_id').on('click', function() {
   $('html, body').animate({scrollTop: images},900);
 });
 
-$('#staff_id').on('click', function() {
-  const images = $('#staff').position().top;
+$('#staff_header_id').on('click', function() {
+  const images = $('#staff_header').position().top;
   $('html, body').animate({scrollTop: images},900);
 });
 
