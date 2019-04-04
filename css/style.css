@@ -179,7 +179,7 @@ main {
 #staff_text {
 	display: flex;
 	flex: 0 1 40vw;
-	height: 50vh;
+	height: 100vh;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -533,13 +533,9 @@ input[type=submit]:hover {
 }
 
 /* Screen Sizes 700px and Up */
-@media(min-width: 700px, min-height: 500px) {
+@media(min-width: 700px), (min-height: 700px) {
 	.btn {
 		padding: 1rem 3rem;
-	}
-
-	#staff_text {
-		height: 100vh;
 	}
 
 	#staff_text h2 {
