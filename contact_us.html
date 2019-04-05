@@ -7,84 +7,114 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href= "css/style.css">
 	<link rel="stylesheet" href= "https://fontawesome.com/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Contact Us - [OFFICIAL] Creator School</title>
 	<link rel="icon" href="img/creator_school.png">
 </head>
 <body>
 
-  <main>
-
-    <div class="container">
-      <form name="contact_us_form" action="https://formspree.io/staff.creatorschool@gmail.com" method="POST">
-
-        <a id="homepage" href="index.html">Return Home</a>
-        <h1 id="contact_us">Contact Us!</h1>
-        <br>
-
-        <label for="fname">First Name (required)</label>
-        <input type="text" id="fname" name="first_name" placeholder="Your name.." required>
-
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="last_name" placeholder="Your last name..">
-
-        <label for="discord">Discord Tag (required)</label>
-        <input type="text" id="discord" name="discord_tag" placeholder="EG. ChiefJack_YT#4450" required>
-
-        <label for="email">Email (required)</label>
-        <input type="text" id="email" name="email_address" placeholder="Your email.." required>
-
-        <label for="category">Message Category (required)</label>
-        <select id="category" name="category">
-          <option value="question_query">Question / Query</option>
-          <option value="suggestion">Suggestion</option>
-          <option value="partnership_request">Partnership Request</option>
-          <option value="server_help">Server Help / Assistance</option>
-          <option value="other">Other</option>
-        </select>
-
-        <label for="subject">Subject (required)</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
-
-        <input type="submit" value="Submit">
-
-      </form>
+  <div class="navbar" id="id_navbar">
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="events.html">Events</a>
+    <div class="dropdown">
+      <button class="dropbtn">What We Offer
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a <a href="classes.html">Classes</a>
+        <a href="staff.html">Staff</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="tutors.html">Tutors</a>
+      </div>
     </div>
+    <a href="about.html">About</a>
+    <a href="contact_us.html">Contact Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="navbar_responsive()">
+    <i class="fa fa-bars"></i>
+  </a>
 
-  </main>
+  </div>
 
-  <footer>
-		<h3>Find Out More and Get In Touch</h3>
-		<p>Join the Server:
-			<strong> <a href="https://discord.gg/hj2smn9" class="links"> https://discord.gg/hj2smn9 </a> </strong>
-		</p>
-		<p>Contact the Owner:
-			<strong>ChiefJack_YT#4450 </strong>
-		(Discord)
-		</p>
-		<p>Website Created By:
-			<strong>ChiefJack_YT#4450.</strong>
-		Any issues should be directed towards him.
-		</p>
+</body>
+
+<main>
+
+  <div class="container">
+
+    <div class="contact_us_header">
+      <button id="go_back" onclick="go_back()">Return To Previous Page</button>
+      <h1 id="contact_us">Contact Us!</h1>
+    </div>
 
     <br>
 
-    <a href="index.html" class="sitemap"> Home </a>
-		<a href="what_we_offer.html" class="sitemap"> What We Offer </a>
-		<a href="news.html" class="sitemap"> News </a>
-		<a href="events.html" class="sitemap"> Events </a>
-		<a href="about.html" class="sitemap"> About </a>
-		<a href="contact_us.html" class="sitemap"> Contact Us </a>
+    <form name="contact_us_form" action="https://formspree.io/staff.creatorschool@gmail.com" method="POST">
 
-		<a id="back_to_top" href="#">&#10148;</a>
-		<a id="down_to_bottom" href="#">&#10148;</a>
-	</footer>
+      <label for="fname">First Name (required)</label>
+      <input type="text" id="fname" name="first_name" placeholder="Your name.." required>
 
-	<script
-	  src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous"></script>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="last_name" placeholder="Your last name..">
 
-		<script src="js/main.js"></script>
+      <label for="discord">Discord Tag (required)</label>
+      <input type="text" id="discord" name="discord_tag" placeholder="EG. ChiefJack_YT#4450" required>
 
-</body>
+      <label for="email">Email (required)</label>
+      <input type="text" id="email" name="email_address" placeholder="Your email.." required>
+
+      <label for="category">Message Category (required)</label>
+      <select id="category" name="category">
+        <option value="question_query">Question / Query</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="partnership_request">Partnership Request</option>
+        <option value="server_help">Server Help / Assistance</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="subject">Subject (required)</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+</main>
+
+<footer>
+	<h3>Find Out More and Get In Touch</h3>
+	<p>Join the Server:
+		<strong> <a href="https://discord.gg/hj2smn9" class="links"> https://discord.gg/hj2smn9 </a> </strong>
+	</p>
+	<p>Contact the Owner:
+		<strong>ChiefJack_YT#4450 </strong>
+	(Discord)
+	</p>
+	<p>Website Created By:
+		<strong>ChiefJack_YT#4450.</strong>
+	Any issues should be directed towards him.
+	</p>
+
+  <br>
+
+  <a href="index.html" class="sitemap"> Home </a>
+	<a href="news.html" class="sitemap"> News </a>
+	<a href="events.html" class="sitemap"> Events </a>
+	<a href="what_we_offer.html" class="sitemap"> What We Offer </a>
+	<a href="about.html" class="sitemap"> About </a>
+	<a href="contact_us.html" class="sitemap"> Contact Us </a>
+
+	<a id="back_to_top" href="#">&#10148;</a>
+	<a id="down_to_bottom" href="#">&#10148;</a>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<script src="js/main.js"></script>
+
 </html>

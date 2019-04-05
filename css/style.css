@@ -32,6 +32,107 @@ main {
 	-20px 0px 50px rgba(0,0,0,0.2);
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #aaa;
+	max-width: 900px;
+	width: 100%;
+	margin: auto;
+}
+
+.navbar a {
+  float: left;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+	display: block;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 1rem 1rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eee;
+  min-width: 137px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #000;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #eee;
+	color: #000;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
 #Menu,
 #Menu ul {
   list-style: none;
@@ -111,7 +212,7 @@ main {
 #landing_text {
 	display: flex;
 	flex: 0 1 40vw;
-	height: 50vh;
+	height: 100vh;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -164,12 +265,12 @@ main {
 }
 
 #landing_text_not_home h1 {
-	font-size: 5rem;
+	font-size: 2.5rem;
 }
 
 #landing_text_not_home h2 {
 	color: #888;
-	font-size: 2.5rem;
+	font-size: 1.25rem;
 }
 
 #staff {
@@ -345,11 +446,264 @@ main {
 }
 
 #tutors_text h2 {
-	font-size: 3rem;
+	font-size: 1.25rem;
 }
 
 #tutors_text p {
+	font-size: 0.75rem;
+}
+
+#tutors_menu_header {
+	padding: 0.5rem;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+#tutors_menu_header h2 {
+	display: inline-block;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 1.5rem;
+}
+
+#tutors_buttons {
+	display: inline-block;
+	flex: 0 1 40vw;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#tutors_list {
+	text-align: center;
+}
+
+#teachers {
+	background: #fff;
+}
+
+#teachers_text {
+	display: flex;
+	flex: 0 1 40vw;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#teachers_text h2 {
 	font-size: 1.25rem;
+}
+
+#teachers_text p {
+	font-size: 0.75rem;
+}
+
+#teachers_menu_header {
+	padding: 0.5rem;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+#teachers_menu_header h2 {
+	display: inline-block;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 1.5rem;
+}
+
+#teachers_buttons {
+	display: inline-block;
+	flex: 0 1 40vw;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#teachers_list {
+	text-align: center;
+}
+
+#classes_main {
+	background: #fff;
+}
+
+#classes_menu_header {
+	padding: 0.5rem;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+#classes_menu_header h2 {
+	display: inline-block;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 1.5rem;
+}
+
+#classes_buttons {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+#teachers_button {
+	display: inline-block;
+	flex: 0 1 40vw;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#tutors_button {
+	display: inline-block;
+	flex: 0 1 40vw;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#classes_list {
+	text-align: center;
+}
+
+#classes_text {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#air_deco_image {
+	background: url(../img/air_deco_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#block_deco_image {
+	background: url(../img/block_deco_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#tech_image {
+	background: url(../img/tech_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#glow_image {
+	background: url(../img/glow_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#core_image {
+	background: url(../img/core_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#modern_image {
+	background: url(../img/modern_class_1.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#design_image {
+	background: url(../img/design_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#art_image {
+	background: url(../img/art_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#effect_image {
+	background: url(../img/effect_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#gameplay_image {
+	background: url(../img/gameplay_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#trigger_image {
+	background: url(../img/trigger_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#threedl_image {
+	background: url(../img/3dl_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#colour_image {
+	background: url(../img/colour_class.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0;
+}
+
+#last_updated {
+	float: right;
+	font-size: 1rem;
+	padding-right: 1rem;
 }
 
 .links {
@@ -468,6 +822,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+	font: inherit;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -482,7 +837,11 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-#homepage {
+button {
+	font: inherit;
+}
+
+#go_back {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -497,7 +856,7 @@ input[type=submit]:hover {
 	float: right;
 }
 
-#homepage:hover {
+#go_back:hover {
 	background-color: #ddd;
 	color: #000;
 }
@@ -517,23 +876,43 @@ input[type=submit]:hover {
 		height: 100vh;
 	}
 
+	#landing_not_home {
+		height: 100%;
+	}
+
+	#landing_text_not_home {
+		height: 100vh;
+	}
+
+	#landing_text_not_home h1 {
+		font-size: 5rem;
+	}
+
+	#landing_text_not_home h2 {
+		color: #888;
+		font-size: 2.5rem;
+	}
+
 	#staff {
 		display: flex;
 		height: 100%;
 	}
 
 	#tutors {
-		display: flex;
 		height: 100%;
 	}
 
-	#tutors_text {
-		height: 100vh;
+	#teachers {
+		height: 100%;
+	}
+
+	#classes {
+		height: 100%;
 	}
 }
 
 /* Screen Sizes 700px and Up */
-@media(min-width: 700px), (min-height: 700px) {
+@media(min-width: 700px) and (min-height: 600px) {
 	.btn {
 		padding: 1rem 3rem;
 	}
@@ -543,6 +922,30 @@ input[type=submit]:hover {
 	}
 
 	#staff_text p {
+		font-size: 1.25rem;
+	}
+
+	#tutors_text h2 {
+		font-size: 3rem;
+	}
+
+	#tutors_text p {
+		font-size: 1.25rem;
+	}
+
+	#teachers_text h2 {
+		font-size: 3rem;
+	}
+
+	#teachers_text p {
+		font-size: 1.25rem;
+	}
+
+	#classes_text h2 {
+		font-size: 3rem;
+	}
+
+	#classes_text p {
 		font-size: 1.25rem;
 	}
 }
