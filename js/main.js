@@ -219,6 +219,20 @@ $('#classes_colour_id').on('click', function() {
   $('html, body').animate({scrollTop: images},900);
 });
 
+$('#past_events_id').on('click', function() {
+  const images = $('#past_events').position().top;
+  $('html, body').animate({scrollTop: images},900);
+});
+
+$('#current_events_id').on('click', function() {
+  const images = $('#current_events').position().top;
+  $('html, body').animate({scrollTop: images},900);
+});
+
+$('#future_events_id').on('click', function() {
+  const images = $('#future_events').position().top;
+  $('html, body').animate({scrollTop: images},900);
+});
 
 // Navbar
 
