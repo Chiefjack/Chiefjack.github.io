@@ -317,8 +317,28 @@ main {
 	margin: 0;
 }
 
+#eridani_image {
+	background: url(../img/eridani.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
 #gooseam_image {
 	background: url(../img/gooseam.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#meg3orite_image {
+	background: url(../img/meg3orite.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
