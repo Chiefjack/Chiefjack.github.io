@@ -307,6 +307,16 @@ main {
 	margin: 0;
 }
 
+#ardolf_image {
+	background: url(../img/ardolf.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
 #chunks_image {
 	background: url(../img/chunks.png);
 	background-position: center;
@@ -319,6 +329,16 @@ main {
 
 #eridani_image {
 	background: url(../img/eridani.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#fghjapan_image {
+	background: url(../img/fghjapan.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
