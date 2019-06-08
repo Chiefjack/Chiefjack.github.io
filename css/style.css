@@ -367,6 +367,16 @@ main {
 	margin: 0;
 }
 
+#sakura_image {
+	background: url(../img/sakura.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
 #sequex_image {
 	background: url(../img/sequex.png);
 	background-position: center;
