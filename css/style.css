@@ -407,6 +407,36 @@ main {
 	margin: 0;
 }
 
+#abstort_image {
+	background: url(../img/abstort.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#geometrypilot_image {
+	background: url(../img/geometrypilot.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
+#xultronix_image {
+	background: url(../img/xultronix.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
 #tutors {
 	background: #fff;
 }
