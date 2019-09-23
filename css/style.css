@@ -437,6 +437,16 @@ main {
 	margin: 0;
 }
 
+#pacific_image {
+	background: url(../img/pacific.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 50vw;
+	margin: 0;
+}
+
 #tutors {
 	background: #fff;
 }
